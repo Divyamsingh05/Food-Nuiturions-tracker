@@ -1,0 +1,47 @@
+.macro-ring-wrap {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.macro-ring-svg {
+  position: absolute;
+  inset: 0;
+  transform: rotate(0deg);
+}
+
+.macro-ring-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  z-index: 1;
+}
+
+.ring-cal {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background: linear-gradient(135deg, #fff, rgba(255,255,255,0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.ring-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.ring-sub {
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
